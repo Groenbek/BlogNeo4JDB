@@ -22,7 +22,7 @@ post.put('/:id', async (req,res)=>{
     res.json(result)
 })
 
-// DELETE USER 
+// DELETE POST 
 post.delete('/:id', async (req,res)=>{
     const result = await postModel.findPostByIdAndDelete(req.params.id)
     res.json(result)

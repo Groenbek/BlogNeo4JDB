@@ -12,7 +12,6 @@ const driver = neo4j.driver(url, neo4j.auth.basic(db_username, db_password));
 
 const session = driver.session({database});
 
-//session.run(query)
 
 // FIND ALL USERS
 const findAll = async () =>{
